@@ -27,3 +27,85 @@ Justificación de las elecciones:
 *La solución propuesta es escalable y adaptable a las necesidades de diferentes tipos de bancos.
 *El sistema puede integrarse con otros sistemas del banco, como el CRM o el sistema de gestión de colas.
 *La información proporcionada por el sistema permitirá al banco tomar decisiones estratégicas sobre la distribución del personal, la ubicación de las sucursales y la optimización de los recursos.
+
+Objetivo:
+
+Desarrollar un sistema de visualización de la actividad en las sucursales bancarias utilizando las APIs de OpenAI y NightCafe para generar imágenes a partir de texto.
+
+Metodología:
+
+Recopilación de datos:
+
+Datos históricos de afluencia de clientes.
+Transacciones bancarias.
+Variables relevantes (ubicación, día de la semana, hora del día, etc.).
+
+Análisis de datos:
+
+Aplicación de técnicas de Machine Learning para:
+Identificar patrones en la afluencia de clientes.
+Predecir la afluencia futura.
+
+Generación de imágenes:
+
+Utilizar la API de OpenAI para generar descripciones textuales de la actividad en las sucursales.
+Enviar las descripciones a la API de NightCafe para convertirlas en imágenes.
+
+Visualización de la información:
+
+Mostrar las imágenes en un panel de control interactivo.
+Permitir a los usuarios explorar la actividad por sucursal, hora del día y día de la semana.
+Herramientas y tecnologías:
+
+Python: Lenguaje de programación principal.
+Librerías de análisis de datos: Pandas, NumPy, Matplotlib.
+Librerías de Machine Learning: TensorFlow, scikit-learn.
+API de OpenAI: Generación de texto.
+NightCafe: Generación de imágenes.
+Herramientas de visualización: Dash, Plotly.
+
+Ventajas:
+
+Visualización atractiva: Las imágenes pueden comunicar la información de forma más intuitiva y atractiva que los datos brutos.
+Personalización: Los usuarios pueden elegir qué información quieren ver y cómo quieren verla.
+Información en tiempo real: El sistema puede actualizarse en tiempo real para mostrar la actividad actual en las sucursales.
+Desafíos:
+
+Costo: Las APIs de OpenAI y NightCafe tienen un costo asociado.
+Calidad de las imágenes: La calidad de las imágenes generadas por NightCafe puede variar.
+Precisión de las descripciones: La precisión de las descripciones generadas por OpenAI es fundamental para la calidad de las imágenes.
+Ejemplo de implementación:
+
+Prompt:
+
+Generar una imagen que represente la afluencia de clientes en la sucursal "Centro" a las 10:00 AM del lunes. La imagen debe mostrar el número de clientes en diferentes áreas de la sucursal (mostradores, cajeros automáticos, zona de espera).
+Código:
+
+Python
+# Importación de librerías
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from openai import api_key, generate
+from nightcafe import api
+# Carga de datos
+datos = pd.read_csv("datos_afluencia.csv")
+# Preprocesamiento de datos
+datos["fecha"] = pd.to_datetime(datos["fecha"])
+datos["hora"] = datos["fecha"].dt.hour
+datos["dia"] = datos["fecha"].dt.dayofweek
+# Generación de descripción
+descripcion = "Sucursal bancaria con {} clientes. {} en los mostradores, {} en los cajeros automáticos y {} en la zona de espera.".format(
+    datos["afluencia"], datos["mostradores"], datos["cajeros"], datos["espera"]
+)
+# Generación de imagen
+api_key = "YOUR_API_KEY"
+imagen = generate(api_key, description)
+# Visualización de la imagen
+plt.imshow(imagen)
+plt.show()
+
+Conclusión:
+
+El uso de las APIs de OpenAI y NightCafe puede ser una forma innovadora de visualizar la actividad en las sucursales bancarias. Este enfoque ofrece una experiencia más atractiva e intuitiva para los usuarios, y puede ayudar a mejorar la toma de decisiones por parte del banco.
+
