@@ -1,46 +1,29 @@
 Visualización de la actividad en las sucursales bancarias:
-Presentación del problema a abordar:
+1.Presentación del problema a abordar:
 Problema:Distribución ineficiente del personal en las sucursales bancarias.
 Descripción:La afluencia de clientes en las sucursales bancarias varía considerablemente a lo largo del día y la semana. Esto genera que, en algunos momentos, haya exceso de personal sin tareas mientras que en otros hay largas colas de espera y clientes insatisfechos.
 Relevancia:La mala distribución del personal impacta negativamente en la experiencia del cliente, la productividad del personal y la eficiencia del banco
-.
 2. Desarrollo de la propuesta de solución:
 Solución:Implementar un sistema de visualización de la actividad en las sucursales bancarias basado en mapas de calor.
 Vinculación con IA:
-•
-Análisis de datos:Se analizarán datos históricos de afluencia de clientes, transacciones bancarias y otras variables relevantes.
-•
-Generación de mapas de calor:Se crearán mapas de calor dinámicos que muestren la concentración de clientes en las diferentes áreas de la sucursal en tiempo real.
-•
-Predicción de la afluencia:Se utilizarán modelos de Machine Learningpara predecir la afluencia de clientes en diferentes momentos del día y la semana.
+*Análisis de datos:Se analizarán datos históricos de afluencia de clientes, transacciones bancarias y otras variables relevantes.
+*Generación de mapas de calor:Se crearán mapas de calor dinámicos que muestren la concentración de clientes en las diferentes áreas de la sucursal en tiempo real.
+*Predicción de la afluencia:Se utilizarán modelos de Machine Learningpara predecir la afluencia de clientes en diferentes momentos del día y la semana.
 Prompts:
-•
-Texto-texto:
-•
+*Texto-texto:
 "Generar un mapa de calor de la sucursal X mostrando la concentración de clientes por hora del día y día de la semana."
-•
 "Predecir la afluencia de clientes en la sucursal Y para las próximas 24 horas."
-•
-Texto-imagen:
-•
+*Texto-imagen:
 "Mostrar imágenes de las áreas de la sucursal Z con mayor concentración de clientes."
-•
 "Crear una visualización interactiva que permita al usuario explorar la actividad en las diferentes sucursales del banco."
 3. Justificación de la viabilidad del proyecto:
 Viabilidad técnica:
-•
-Las tecnologías de análisis de datos, generación de mapas de calor y Machine Learningson ampliamente disponibles.
-•
-Existen APIsy herramientas de terceros que pueden facilitar el desarrollo del proyecto.
+*Las tecnologías de análisis de datos, generación de mapas de calor y Machine Learningson ampliamente disponibles.
+*Existen APIsy herramientas de terceros que pueden facilitar el desarrollo del proyecto.
 Tiempo y recursos:
-•
-El desarrollo del proyecto puede llevarse a cabo en un plazo de 3 a 6 meses, con un equipo de 2 a 3 personas.
-•
-La inversión en recursos tecnológicos y de infraestructura será moderada.
+*El desarrollo del proyecto puede llevarse a cabo en un plazo de 3 a 6 meses, con un equipo de 2 a 3 personas.
+*La inversión en recursos tecnológicos y de infraestructura será moderada.
 Justificación de las elecciones:
-•
-La solución propuesta es escalable y adaptable a las necesidades de diferentes tipos de bancos.
-•
-El sistema puede integrarse con otros sistemas del banco, como el CRM o el sistema de gestión de colas.
-•
-La información proporcionada por el sistema permitirá al banco tomar decisiones estratégicas sobre la distribución del personal, la ubicación de las sucursales y la optimización de los recursos.
+*La solución propuesta es escalable y adaptable a las necesidades de diferentes tipos de bancos.
+*El sistema puede integrarse con otros sistemas del banco, como el CRM o el sistema de gestión de colas.
+*La información proporcionada por el sistema permitirá al banco tomar decisiones estratégicas sobre la distribución del personal, la ubicación de las sucursales y la optimización de los recursos.
